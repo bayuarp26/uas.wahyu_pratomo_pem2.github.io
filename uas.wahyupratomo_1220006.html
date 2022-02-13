@@ -8,29 +8,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
-    <style>
+   <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
         table{
-            width: 65px;
+            width: 20px;
             border-collapse: collapse;
-            background-image: url('https://hdqwalls.com/wallpapers/blue-blur.jpg');
-            
+
+            margin: 0px;
+	          transition: all 0.4s;
+	          -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+             border-spacing: 1;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 20px double transparent;
+            background: transparent;
+            position: relative;
         }
+        .trs{
+          background: transparent;
+          opacity: 0,7;
+          filter: alpha(opacity=15);
+        }
+        tbody tr {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #FFEDD3;
+  line-height: 1.2;
+  font-weight: unset;
+}
         tr,td,th{
         border : 3px ;
         text-align: center;
         }
-        h2{
+        h2,h3{
             
           font-family: 'Poppins', sans-serif;
           text-align: center;
-          color: aliceblue;
+          color: #ffffff;
         }
-        img{
-            width: 30%;
-            height: 30% ;
+        img {
+            width: 15%;
+            height: 15% ;
         }
-        .css-t0ond8{
+      
+        .tombol{
         width: 47%;
         height: 32px;
         color: white;
@@ -50,9 +74,19 @@
         }
         body{
           background-image: url('https://www.bing.com/th?id=OHR.TeaGardensMunnar_ROW0380977650_1920x1200.jpg&rf=LaDigue_1920x1200.jpg');
+          background-attachment:fixed ;
         }
+        html {
+	      height: 100%
+        }
+        
+        .container-page {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        
       
-        </style>
+         </style>
     <title>UAS PEMROGRAMAN 2</title>
 
 </head>
@@ -63,10 +97,10 @@
     
     
 
-<table class="table table-bordered">
+<table class="table table-sm table-responsive{-sm}">
 
-        <thead>
-          <tr>
+        <thead class="thead-dark">
+          <tr class="page">
             <th scope="col">No</th>
             <th scope="col">Nama barang</th>
             <th scope="col">Harga</th>
@@ -77,40 +111,42 @@
           <tr>
             <th scope="row">1</th>
             <td>Zephyrus Duo 15 SE
-            <details><table><td style="display:none;"></td>
-                <tr class="more-info" style="display: table-row">
+            <details><div><table class="table-active table-bordered table-hover">
+              <t="display:none;"></td>
+                <tr="display: table-row">
                 <th scope="row">Processor</th>
                 <td>Up to AMD&nbsp;Ryzen&nbsp;9&nbsp;5900HX&nbsp;3.3GHz&nbsp;(Turbo up&nbsp;to&nbsp;4.6GHz)</td></tr>
-                <tr class="more-info" style="display: table-row;">
+                <tr="display: table-row;">
                 <th scope="row">Graphic</th>
                 <td>Up to NVIDIA GeForce RTX 3080</td></tr>
-                <tr class="more-info" style="display: table-row;">
+                <tr="display: table-row;">
                 <th scope="row">Display</th>
                 <td>Up to 15.6" 4K UHD (3840x2160) glossy display"</td></tr>
-                <tr class="more-info" style="display: table-row;">
+                <tr="display: table-row;">
                 <th scope="row">Memory</th>
                 <td>Up to 32GB DDR4</td></tr>
-                <tr class="more-info" style="display: table-row;">
+                <tr="display: table-row;">
                 <th scope="row">Storage</th><td>Up to 2TB RAID 0</td>
-                </tr></table></details></td>
+                </tr></table></div></details></td>
             <td>Rp 39.399.000</td>
             <td><img src="https://www.asus.com/us/site/gaming/assets/images/rog/Zephyrus-Duo/kv-2.png"></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Zephyrus S15 - GX502<details><table>
-              <tr class="more-info" style="display: table-row;">
+            <td>Zephyrus S15 - GX502<details>
+              <table class="table-active table-bordered table-hover">
+              <tr="display: table-row;">
                 <th scope="row">Processor</th>
                 <td>Up to Intel&nbsp;Core&nbsp;i7-10875H&nbsp;Up&nbsp;to&nbsp;5.1GHz&nbsp;with&nbsp;Turbo Boost</td></tr>
-                <tr class="more-info" style="display: table-row;">
+                <tr="display: table-row;">
                 <th scope="row">Graphic</th>
                 <td>Up to NVIDIA GeForce RTX 2080 Super</td></tr>
-                <tr class="more-info" style="display: table-row;">
+                <tr="display: table-row;">
                 <th scope="row">Display</th>
                 <td>Up to 15.6" FHD (1920x1080) glossy 300Hz display</td></tr>
-                <tr class="more-info" style="display: table-row;">
+                <tr="display: table-row;">
                 <th scope="row">Memory</th><td>Up to 32GB DDR4</td></tr>
-                <tr class="more-info" style="display: table-row;">
+                <tr="display: table-row;">
                 <th scope="row">Storage</th><td>Up to 1TB PCIe® x4 NVMe SSD</td></tr>
               </table>
             </details></td>
@@ -119,18 +155,18 @@
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Zephyrus M16 - GU603<details><table>
-              <tr class="more-info" style="display: table-row;"><th scope="row">Processor</th>
+            <td>Zephyrus M16 - GU603<details><table class="table-active table-bordered table-hover">
+              <tr="display: table-row;"><th scope="row">Processor</th>
                 <td>Up&nbsp;to&nbsp;Intel&nbsp;Core&nbsp;i9-11900H&nbsp;Up&nbsp;to&nbsp;4.80GHz&nbsp;processor</td></tr>
-              <tr class="more-info" style="display: table-row;">
+              <tr="display: table-row;">
                 <th scope="row">Graphic</th><td>Up to NVIDIA GeForce RTX 3060</td></tr>
-              <tr class="more-info" style="display: table-row;">
+              <tr="display: table-row;">
                 <th scope="row">Display</th>
                 <td>Up to 16" WQXGA (2560x1600) 165Hz anti-glare display</td></tr>
-              <tr class="more-info" style="display: table-row;">
+              <tr="display: table-row;">
                 <th scope="row">Memory</th>
                 <td>16GB RAM</td></tr>
-              <tr class="more-info" style="display: table-row;">
+              <tr="display: table-row;">
                 <th scope="row">Storage</th>
               <td>Up to 1TB SSD</td></tr>
             </table></details></td>
@@ -139,34 +175,177 @@
           </tr>
           <tr>
             <th scope="row">4</th>
-            <td>TUF Dash - TUF516<details><table>
-              <tr class="more-info" style="display: table-row;">
+            <td>TUF Dash - TUF15<details><h3><table class="table-active table-bordered table-hover">
+              <tr="display: table-row;">
                 <th scope="row">Processor</th>
                 <td>Intel&nbsp;Core&nbsp;i7-11375H&nbsp;3.3GHz&nbsp;(Turbo&nbsp;up&nbsp;to&nbsp;5GHz)</td></tr>
-              <tr class="more-info" style="display: table-row;">
+              <tr="display: table-row;">
                 <th scope="row">Graphic</th>
                 <td>Up to NVIDIA GeForce RTX 3070</td>
-              </tr><tr class="more-info" style="display: table-row;">
+              </tr><tr="display: table-row;">
                 <th scope="row">Display</th>
                 <td>Up to 15.6" FHD (1920x1080) glossy 240Hz display</td></tr>
-              <tr class="more-info" style="display: table-row;">
+              <tr="display: table-row;">
                 <th scope="row">Memory</th>
                 <td>Up to 16GB DDR4</td></tr>
-              <tr class="more-info" style="display: table-row;">
+              <tr="display: table-row;">
                 <th scope="row">Storage</th>
                 <td>Up to 1TB PCIe® SSD</td></tr>
-            </table></details></td>
+            </table></h3></details></td>
             <td>Rp 21.999.000</td>
             <td><img src="https://www.asus.com/us/site/gaming/assets/images/tuf/Dash/hero.png"></td>
           </tr>
+          <th scope="row">5</th>
+          <td>TUF Gaming FX506<details><h3><table class="table-active table-bordered table-hover">
+              <tr class="display: table-row;">
+                <th scope="row">Processor</th>
+                <td>Intel&nbsp;Core&nbsp;i5-10300H&nbsp;2.5GHz&nbsp;(Turbo&nbsp;up&nbsp;to&nbsp;4.5GHz)</td>
+              </tr>
+              <tr class="display: table-row;">
+                <th scope="row">Graphic</th>
+                <td>NVIDIA GeForce GTX 1650</td>
+              </tr>
+              <tr class="display: table-row;">
+                <th scope="row">Display</th>
+                <td>Up to 15.6" FHD (1920x1080) glossy 144Hz display</td>
+              </tr>
+              <tr class="display: table-row;">
+                <th scope="row">Memory</th>
+                <td>8GB DDR4</td>
+              </tr>
+              <tr class="display: table-row;">
+                <th scope="row">Storage</th>
+                <td>Up to 1TB PCIe® SSD</td>
+              </tr>
+          </table></h3></details></td>
+          <td>Rp 18.999.000</td>
+          <td><img src="https://www.asus.com/us/site/gaming/assets/images/products/FX506.png"></td>
+        </tr>
+          <th scope="row">6</th>
+          <td>TUF Gaming FX706<details><h3><table class="table-active table-bordered table-hover"></td>
+              <tr class="display: table-row;">
+                <th scope="row">Processor</th>
+                <td>Intel&nbsp;Core&nbsp;i5-10300H&nbsp;2.5GHz&nbsp;(Turbo&nbsp;up&nbsp;to&nbsp;4.5GHz)</td>
+              </tr>
+              <tr class="display: table-row;">
+                <th scope="row">Graphic</th>
+                <td>NVIDIA GeForce GTX 1660Ti</td>
+              </tr>
+              <tr class="display: table-row;">
+                <th scope="row">Display</th>
+                <td>Up to 17.3" FHD (1920x1080) glossy 144Hz display</td>
+              </tr>
+              <tr class="display: table-row;">
+                <th scope="row">Memory</th>
+                <td>8GB DDR4</td>
+              </tr>
+              <tr class="display: table-row;">
+                <th scope="row">Storage</th>
+                <td>512GB PCIe® SSD</td>
+              </tr>
+              </table>
+              </h3></details></td>
+              <td>Rp 12.999.000</td>
+              <td><img src="https://www.asus.com/us/site/gaming/assets/images/products/FX706.png"></td>
+              </tr>
+              <th scope="row">7</th>
+              <td>TUF A15<details><h3><table class="table-active table-bordered table-hover"></td>
+              <tr class="style=display: table-row;">
+              <th scope="row">Processor</th>
+              <td>Up&nbsp;to&nbsp;AMD&nbsp;Ryzen&nbsp;7&nbsp;4800H Up&nbsp;to&nbsp;4.2&nbsp;GHz&nbsp;with&nbsp;Turbo&nbsp;Boost</td>
+              </tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Graphic</th>
+                <td>Up to NVIDIA GeForce RTX 2060</td>
+              </tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Display</th>
+                <td>Up to 15.6" FHD (1920x1080) glossy 144Hz display</td>
+              </tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Memory</th>
+                <td>16GB DDR4</td>
+              </tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Storage</th>
+                <td>Up to 1TB HDD + 512GB PCIe® SSD</td>
+              </tr>
+              </tr></table></h3></details></td>
+              <td>Rp 22.999.000</td>
+              <td><img src="https://www.asus.com/us/site/gaming/assets/images/products/TUF-A15.png"></td>
+              </tr>
+              <th scope="row">8</th>
+              <td>TUF A17 - TUF706<details><h3><table class="table-active table-bordered table-hover"></td>
+              <tr class="style=display: table-row;">
+                <th scope="row">Processor</th>
+                <td>Up&nbsp;to&nbsp;AMD Ryzen 7 4800H&nbsp;Up&nbsp;to&nbsp;4.2&nbsp;GHz&nbsp;withvTurbo&nbsp;Boost</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Graphic</th>
+                <td>Up to NVIDIA GeForce GTX 1660Ti</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Display</th>
+                <td>Up to 17.3" FHD (1920x1080) glossy 120Hz display</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Memory</th>
+                <td>16GB DDR4</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Storage</th>
+                <td>Up to 2TB PCIe® SSD</td></tr>
+              </tr></tr></table></h3></details></td>
+              <td>Rp 12.999.000</td>
+              <td><img src="https://www.asus.com/us/site/gaming/assets/images/tuf/A17/kv-2.png"></td>
+              </tr>
+              <th scope="row">9</th>
+              <td>Strix Scar 15 - G533<details><h3><table class="table-active table-bordered table-hover"></td>
+              <tr class="style=display: table-row;">
+                <th scope="row">Processor</th>
+                <td>Up to AMD&nbsp;Ryzen&nbsp;9&nbsp;5900HX&nbsp;3.3GHz&nbsp;(Turbo up&nbsp;to&nbsp;4.6GHz)</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Graphic</th>
+                <td>Up to NVIDIA GeForce RTX 3080</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Display</th>
+                <td>Up to 15.6" QHD (2560x1440) glossy 165Hz display</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Memory</th>
+                <td>32GB DDR4</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Storage</th>
+                <td>Up to 1TB PCIe® SSD</td></tr>
+              </tr></tr></table></h3></details></td>
+              <td>Rp 40.371.000</td>
+              <td><img src="https://www.asus.com/us/site/gaming/assets/images/rog/Strix-Scar/hero.png"></td>
+              </tr>
+              <th scope="row">10</th>
+              <td>Strix Scar 17 - G733<details><h3><table class="table-active table-bordered table-hover"></td>
+              <tr class="style=display: table-row;">
+                <th scope="row">Processor</th>
+                <td>Up to AMD&nbsp;Ryzen&nbsp;9&nbsp;5900HX&nbsp;3.3GHz&nbsp;(Turbo up&nbsp;to&nbsp;4.6GHz)</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Graphic</th>
+                <td>Up to NVIDIA GeForce RTX 3080</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Display</th>
+                <td>Up to 17.3" QHD (2560x1440) glossy 165Hz display</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Memory</th>
+                <td>32GB DDR4</td></tr>
+              <tr class="style=display: table-row;">
+                <th scope="row">Storage</th>
+                <td>Up to 2TB PCIe® SSD</td></tr>
+              </tr></tr></table></h3></details></td>
+              <td>Rp 45.999.000</td>
+              <td><img src="https://www.asus.com/us/site/gaming/assets/images/products/G733.png"></td>
+              </tr>
+        
           <tr>
-            <th scope="row">5</th>
-            <td colspan="2"><img src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg"></td>
-            <td><center><button type="button" class="css-t0ond8" onClick='APItokopedia()'data-testid="btnHeaderRegister"> Beli </center></button> </td>
+            <th scope="row">11</th>
+            <td colspan="2"><img src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg" alt="tokopedia"="width:50%;height:50%;"></td>
+            <td><center><button type="button" class="tombol" onClick='APItokopedia()'data-testid="btnHeaderRegister"> Beli </center></button> </td>
           </tr>
           <script>
             //API tokopedia 
-            function APItokopedia(){window.location = "https://www.tokopedia.com/asus-mobile";}
+            function APItokopedia(){window.location = "https://www.tokopedia.com/search?st=product&q=asus%20gaming&navsource=home";}
           </script>
         </tbody>
       </table>
